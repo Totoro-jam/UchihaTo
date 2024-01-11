@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuchihato=self.webpackChunkuchihato||[]).push([[6139],{627:a=>{a.exports=JSON.parse('{"label":"hello","permalink":"/UchihaTo/blog/tags/hello","allTagsPath":"/UchihaTo/blog/tags","count":2,"unlisted":false}')}}]);
