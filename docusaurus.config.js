@@ -34,6 +34,9 @@ const config = {
     locales: ['en'],
   },
 
+  // 插件 sass/scss
+  plugins: ['docusaurus-plugin-sass'],
+
   presets: [
     [
       'classic',
