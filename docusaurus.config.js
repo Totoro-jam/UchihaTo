@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer'
 const config = {
   title: 'My Site test sdf ',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/uchihato1.png',
 
   // Set the production url of your site here
   url: 'https://totoro-jam.github.io/',
@@ -69,10 +69,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'UchihaTo',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/uchihato1.png',
+          srcDark: 'img/uchihato2.png',
         },
         items: [
           {
@@ -83,8 +84,9 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            className: 'github-box',
+            href: 'https://github.com/Totoro-jam/UchihaTo',
+            html: '<span class="github-logo">',
             position: 'right',
           },
         ],

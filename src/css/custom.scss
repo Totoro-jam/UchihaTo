@@ -27,4 +27,21 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  .github-box .github-logo {
+    background: url(../../static/img/github_dark.png) no-repeat;
+  }
+}
+
+.github-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .github-logo {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(../../static/img/github_light.png) no-repeat;
+  }
 }
