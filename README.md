@@ -26,6 +26,10 @@ Personal blog, content document, resume, learning record. It is mainly implement
 
 - [ ] 记录一些想法
 
+- [ ] 相关配置
+
+  > - 支持 prettier/ eslint / flow
+
 - [ ] 网站要具备的要素
 
   > - [ ] 国际化 - 支持中英文切换

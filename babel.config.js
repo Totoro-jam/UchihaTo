@@ -3,4 +3,4 @@ module.exports = {
     require.resolve('@docusaurus/core/lib/babel/preset'),
     '@babel/preset-flow',
   ],
-};
+}

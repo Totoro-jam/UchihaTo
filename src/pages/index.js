@@ -1,14 +1,14 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import clsx from 'clsx'
+import Link from '@docusaurus/Link'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import Layout from '@theme/Layout'
+import HomepageFeatures from '@site/src/components/HomepageFeatures'
 
-import Heading from '@theme/Heading';
-import styles from './index.module.scss';
+import Heading from '@theme/Heading'
+import styles from './index.module.scss'
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext()
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -25,11 +25,11 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
-  );
+  )
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -39,5 +39,5 @@ export default function Home() {
         <HomepageFeatures />
       </main>
     </Layout>
-  );
+  )
 }
