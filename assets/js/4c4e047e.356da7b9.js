@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkuchihato=self.webpackChunkuchihato||[]).push([[7824],{265:e=>{e.exports=JSON.parse('{"permalink":"/UchihaTo/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
