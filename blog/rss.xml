@@ -4,7 +4,7 @@
         <title>My Site test sdf  Blog</title>
         <link>https://totoro-jam.github.io/UchihaTo/blog</link>
         <description>My Site test sdf  Blog</description>
-        <lastBuildDate>Thu, 18 Jan 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Jan 2024 14:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,10 +12,15 @@
             <title><![CDATA[First Blog Post]]></title>
             <link>https://totoro-jam.github.io/UchihaTo/blog/first-blog-post</link>
             <guid>https://totoro-jam.github.io/UchihaTo/blog/first-blog-post</guid>
-            <pubDate>Thu, 18 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>hola</category>
+            <pubDate>Thu, 18 Jan 2024 14:00:00 GMT</pubDate>
+            <description><![CDATA[博客相关]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="博客相关">博客相关<a href="https://totoro-jam.github.io/UchihaTo/blog/first-blog-post#%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3" class="hash-link" aria-label="Direct link to 博客相关" title="Direct link to 博客相关">​</a></h2>
+<p>文档地址：<a href="https://docusaurus.io/zh-CN/docs/blog#blog-post-date" target="_blank" rel="noopener noreferrer">doc/blog</a></p>
+<ul>
+<li>配置作者声明文件authors.yml</li>
+<li>配置阅读时间估计</li>
+</ul>]]></content:encoded>
+            <category>learn</category>
             <category>docusaurus</category>
         </item>
     </channel>
