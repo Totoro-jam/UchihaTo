@@ -18,6 +18,7 @@ Personal blog, content document, resume, learning record. It is mainly implement
   > - 使用 [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) 生成对应的github记录
   > - ？ 评论插件 也使用github的一个
   > - ？ 响应式 - bootstrap， 可以多借用一些模板
+  > - [watching-you](https://jj811208.github.io/watching-you/),有意思的东西
   > - 可以考虑使用 [Flow](https://flow.org/) 是一个针对 JavaScript 代码的静态类型检测器。配合 react 使用
 
 - [ ] 网站的menu初定

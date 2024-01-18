@@ -35,7 +35,19 @@ const config = {
   },
 
   // 插件 sass/scss
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'demo',
+        path: 'demo',
+        routeBasePath: 'demo',
+        sidebarPath: './sidebars/sidebars.js',
+        // ... other options
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -43,7 +55,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: './sidebars/sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/Totoro-jam/UchihaTo',
@@ -79,9 +91,20 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'StudyNotes',
+          },
+          {
+            to: '/demo',
+            label: 'ProjectDemo',
+            position: 'left',
+            activeBaseRegex: `/demo/`,
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            to: '/resume',
+            label: 'resume&CV',
+            position: 'right'
+          },
           {
             className: 'github-box',
             href: 'https://github.com/Totoro-jam/UchihaTo',
