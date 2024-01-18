@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer'
 const config = {
   title: 'My Site test sdf ',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/uchihato1.png',
+  favicon: 'img/uchihato.ico',
 
   // Set the production url of your site here
   url: 'https://totoro-jam.github.io/',
@@ -46,15 +46,13 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Totoro-jam/UchihaTo',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Totoro-jam/UchihaTo',
         },
         theme: {
           customCss: './src/css/custom.scss',
@@ -75,6 +73,7 @@ const config = {
           src: 'img/uchihato1.png',
           srcDark: 'img/uchihato2.png',
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'docSidebar',
@@ -88,6 +87,7 @@ const config = {
             href: 'https://github.com/Totoro-jam/UchihaTo',
             html: '<span class="github-logo">',
             position: 'right',
+            target: '_blank',
           },
         ],
       },
@@ -134,7 +134,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} UchihaTo, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
