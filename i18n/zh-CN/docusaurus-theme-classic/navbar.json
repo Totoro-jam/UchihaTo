@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "UchihaTo",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.StudyNotes": {
+    "message": "学习笔记",
+    "description": "Navbar item with label StudyNotes"
+  },
+  "item.label.ProjectDemo": {
+    "message": "项目demo",
+    "description": "Navbar item with label ProjectDemo"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Resume": {
+    "message": "简历",
+    "description": "Navbar item with label Resume"
+  }
+}

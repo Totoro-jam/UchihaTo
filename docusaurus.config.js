@@ -30,8 +30,13 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-CN',
+    locales: ['en', 'zh-CN'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      },
+    },
   },
 
   // 插件 sass/scss
@@ -94,7 +99,7 @@ const config = {
             label: 'StudyNotes',
           },
           {
-            to: '/demo',
+            to: '/demo/',
             label: 'ProjectDemo',
             position: 'left',
             activeBaseRegex: `/demo/`,
@@ -102,8 +107,8 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           {
             to: '/resume',
-            label: 'resume&CV',
-            position: 'right'
+            label: 'Resume',
+            position: 'left',
           },
           {
             className: 'github-box',
@@ -111,6 +116,10 @@ const config = {
             html: '<span class="github-logo">',
             position: 'right',
             target: '_blank',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },

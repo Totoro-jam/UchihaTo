@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "UchihaTo",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.StudyNotes": {
+    "message": "StudyNotes",
+    "description": "Navbar item with label StudyNotes"
+  },
+  "item.label.ProjectDemo": {
+    "message": "ProjectDemo",
+    "description": "Navbar item with label ProjectDemo"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Resume": {
+    "message": "Resume",
+    "description": "Navbar item with label Resume"
+  }
+}
