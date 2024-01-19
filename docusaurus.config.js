@@ -48,7 +48,7 @@ const config = {
         id: 'demo',
         path: 'demo',
         routeBasePath: 'demo',
-        sidebarPath: './sidebars/sidebars.js',
+        sidebarPath: './sidebars/sidebarsdemo.js',
         // ... other options
       },
     ],
@@ -111,15 +111,15 @@ const config = {
             position: 'left',
           },
           {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          {
             className: 'github-box',
             href: 'https://github.com/Totoro-jam/UchihaTo',
             html: '<span class="github-logo">',
             position: 'right',
             target: '_blank',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
           },
         ],
       },
@@ -179,6 +179,12 @@ const config = {
         categoryId: 'DIC_kwDOLCdBTM4Cceck',
         theme: 'light',
         darkTheme: 'dark_dimmed',
+      },
+      // 配置可隐藏侧边栏
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
       },
     }),
 }

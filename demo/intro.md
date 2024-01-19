@@ -1,9 +1,9 @@
 ---
-  id: 'study-notes'
-  title: '学习笔记简介'
+  id: 'demo-notes'
+  title: '项目demo'
   sidebar_label: '总述'
   sidebar_position: 1
-  keywords: ['learn', 'js', 'datastruct', 'shared']
+  keywords: ['demo', 'project']
 ---
 
 # 简介
