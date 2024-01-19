@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuchihato=self.webpackChunkuchihato||[]).push([[6536],{6641:a=>{a.exports=JSON.parse('[{"label":"learn","permalink":"/UchihaTo/en/blog/tags/learn","count":1},{"label":"docusaurus","permalink":"/UchihaTo/en/blog/tags/docusaurus","count":1}]')}}]);

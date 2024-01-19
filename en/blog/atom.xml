@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://totoro-jam.github.io/UchihaTo/en/blog</id>
+    <title>My Site test sdf  Blog</title>
+    <updated>2024-01-18T14:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://totoro-jam.github.io/UchihaTo/en/blog"/>
+    <subtitle>My Site test sdf  Blog</subtitle>
+    <icon>https://totoro-jam.github.io/UchihaTo/en/img/uchihato.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[First Blog Post]]></title>
+        <id>https://totoro-jam.github.io/UchihaTo/en/blog/first-blog-post</id>
+        <link href="https://totoro-jam.github.io/UchihaTo/en/blog/first-blog-post"/>
+        <updated>2024-01-18T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[博客相关]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="博客相关">博客相关<a href="https://totoro-jam.github.io/UchihaTo/en/blog/first-blog-post#%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3" class="hash-link" aria-label="Direct link to 博客相关" title="Direct link to 博客相关">​</a></h2>
+<p>文档地址：<a href="https://docusaurus.io/zh-CN/docs/blog#blog-post-date" target="_blank" rel="noopener noreferrer">doc/blog</a></p>
+<ul>
+<li>配置作者声明文件authors.yml</li>
+<li>配置阅读时间估计</li>
+</ul>]]></content>
+        <author>
+            <name>Totoro-jam</name>
+            <uri>https://github.com/Totoro-jam/</uri>
+        </author>
+        <category label="learn" term="learn"/>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+</feed>
