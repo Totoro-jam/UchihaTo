@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkuchihato=self.webpackChunkuchihato||[]).push([[9017],{2653:e=>{e.exports=JSON.parse('{"permalink":"/UchihaTo/en/blog/tags/learn","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

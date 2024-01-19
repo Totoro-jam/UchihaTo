@@ -15,10 +15,58 @@
             <pubDate>Thu, 18 Jan 2024 14:00:00 GMT</pubDate>
             <description><![CDATA[博客相关]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="博客相关">博客相关<a href="https://totoro-jam.github.io/UchihaTo/en/blog/first-blog-post#%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3" class="hash-link" aria-label="Direct link to 博客相关" title="Direct link to 博客相关">​</a></h2>
-<p>文档地址：<a href="https://docusaurus.io/zh-CN/docs/blog#blog-post-date" target="_blank" rel="noopener noreferrer">doc/blog</a></p>
+<p>阅读：<a href="https://docusaurus.io/zh-CN/docs/blog#blog-post-date" target="_blank" rel="noopener noreferrer">doc/blog</a></p>
 <ul>
 <li>配置作者声明文件authors.yml</li>
 <li>配置阅读时间估计</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="文档相关">文档相关<a href="https://totoro-jam.github.io/UchihaTo/en/blog/first-blog-post#%E6%96%87%E6%A1%A3%E7%9B%B8%E5%85%B3" class="hash-link" aria-label="Direct link to 文档相关" title="Direct link to 文档相关">​</a></h2>
+<p>阅读：<a href="https://docusaurus.io/zh-CN/docs/docs-introduction" target="_blank" rel="noopener noreferrer">doc/doc</a></p>
+<ul>
+<li>多文档实例</li>
+<li>侧边栏自动生成 和 手动自定义</li>
+<li>侧边栏相关配置和使用小tips</li>
+<li>文档侧边栏可折叠功能</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="翻译国际化相关">翻译国际化相关<a href="https://totoro-jam.github.io/UchihaTo/en/blog/first-blog-post#%E7%BF%BB%E8%AF%91%E5%9B%BD%E9%99%85%E5%8C%96%E7%9B%B8%E5%85%B3" class="hash-link" aria-label="Direct link to 翻译国际化相关" title="Direct link to 翻译国际化相关">​</a></h2>
+<p>阅读： <a href="https://docusaurus.io/zh-CN/docs/i18n/introduction#translation-workflow" target="_blank" rel="noopener noreferrer">doc/i18n</a></p>
+<ul>
+<li>
+<p>配置中/英2种语言</p>
+</li>
+<li>
+<p>了解翻译的使用</p>
+<blockquote>
+<ul>
+<li>包括 react 源码中文件翻译</li>
+<li>md文件翻译</li>
+<li>插件中数据的json格式的翻译</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>集成sass应用 - crowdin</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="高度自定义">高度自定义<a href="https://totoro-jam.github.io/UchihaTo/en/blog/first-blog-post#%E9%AB%98%E5%BA%A6%E8%87%AA%E5%AE%9A%E4%B9%89" class="hash-link" aria-label="Direct link to 高度自定义" title="Direct link to 高度自定义">​</a></h2>
+<ul>
+<li>合理使用弹出和包装高度自定义主题组件</li>
+<li>高度自定义样式</li>
+<li>自定义中英文- 字体</li>
+<li>融入更多有趣的第三方库</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="后续集成搜索">后续集成搜索<a href="https://totoro-jam.github.io/UchihaTo/en/blog/first-blog-post#%E5%90%8E%E7%BB%AD%E9%9B%86%E6%88%90%E6%90%9C%E7%B4%A2" class="hash-link" aria-label="Direct link to 后续集成搜索" title="Direct link to 后续集成搜索">​</a></h2>
+<ul>
+<li>除了考虑官方的algolia docsearch</li>
+<li>可以考虑其他第三方库的模糊搜索库</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="更多">更多<a href="https://totoro-jam.github.io/UchihaTo/en/blog/first-blog-post#%E6%9B%B4%E5%A4%9A" class="hash-link" aria-label="Direct link to 更多" title="Direct link to 更多">​</a></h2>
+<ul>
+<li>更加熟练高效使用md快速输出内容</li>
+<li>熟悉常用 cli scripts</li>
+<li>页面响应式和可视化</li>
+<li>其他web方面的相关实践</li>
+<li>关注更多优秀的 website cases ,汲取更多有趣的东西</li>
 </ul>]]></content:encoded>
             <category>learn</category>
             <category>docusaurus</category>

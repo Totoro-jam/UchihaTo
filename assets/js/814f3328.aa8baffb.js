@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkuchihato=self.webpackChunkuchihato||[]).push([[2535],{5641:t=>{t.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"First Blog Post","permalink":"/UchihaTo/blog/first-blog-post","unlisted":false}]}')}}]);
