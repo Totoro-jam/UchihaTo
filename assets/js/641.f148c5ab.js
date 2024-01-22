@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuchihato=self.webpackChunkuchihato||[]).push([[641],{5641:t=>{t.exports=JSON.parse('{"title":"\u8fd1\u671f\u6587\u7ae0","items":[{"title":"First Blog Post","permalink":"/UchihaTo/blog/first-blog-post","unlisted":false}]}')}}]);

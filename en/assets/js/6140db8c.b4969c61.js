@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkuchihato=self.webpackChunkuchihato||[]).push([[166],{4114:a=>{a.exports=JSON.parse('{"label":"docusaurus","permalink":"/UchihaTo/en/blog/tags/docusaurus","allTagsPath":"/UchihaTo/en/blog/tags","count":1,"unlisted":false}')}}]);
