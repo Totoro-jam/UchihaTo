@@ -79,4 +79,8 @@
     height: 28px;
     background: url(../../static/img/github_light.png) no-repeat;
   }
+
+  .github-logo:hover {
+    background: url(../../static/img/github_hover.png) no-repeat;
+  }
 }
