@@ -26,8 +26,10 @@
     "@mdx-js/react": "^3.0.0",
     "@mui/icons-material": "^5.15.5",
     "@mui/joy": "^5.0.0-beta.23",
+    "@nextui-org/react": "^2.2.9",
     "clsx": "^2.0.0",
     "docusaurus-plugin-sass": "^0.2.5",
+    "framer-motion": "^10.18.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -38,13 +40,16 @@
     "@docusaurus/module-type-aliases": "3.1.0",
     "@docusaurus/types": "3.1.0",
     "@giscus/react": "^2.4.0",
+    "autoprefixer": "^10.4.17",
     "babel-plugin-syntax-hermes-parser": "^0.18.2",
     "eslint": "^8.56.0",
     "eslint-plugin-ft-flow": "^3.0.2",
     "eslint-plugin-react": "^7.33.2",
     "flow-bin": "^0.226.0",
     "hermes-eslint": "^0.18.2",
-    "prettier": "3.2.2"
+    "postcss": "^8.4.33",
+    "prettier": "3.2.2",
+    "tailwindcss": "^3.4.1"
   },
   "browserslist": {
     "production": [

@@ -4,5 +4,5 @@ module.exports = {
     require.resolve('@babel/preset-flow'),
   ],
   plugins: ['babel-plugin-syntax-hermes-parser'],
-  parserOpts: {flow: 'all'},
-};
+  parserOpts: { flow: 'all' },
+}
