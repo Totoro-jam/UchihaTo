@@ -6,6 +6,8 @@
 
 import { themes as prismThemes } from 'prism-react-renderer'
 
+const editUrl = 'https://github.com/Totoro-jam/UchihaTo/edit/main/'
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site test sdf ',
@@ -49,6 +51,7 @@ const config = {
         path: 'demo',
         routeBasePath: 'demo',
         sidebarPath: './sidebars/sidebarsdemo.js',
+        editUrl,
         // ... other options
       },
     ],
@@ -63,13 +66,13 @@ const config = {
           sidebarPath: './sidebars/sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/Totoro-jam/UchihaTo',
+          editUrl,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/Totoro-jam/UchihaTo',
+          editUrl,
         },
         theme: {
           customCss: './src/css/custom.scss',

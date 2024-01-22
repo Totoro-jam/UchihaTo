@@ -20,6 +20,7 @@ Personal blog, content document, resume, learning record. It is mainly implement
   > - ？ 响应式 - bootstrap， 可以多借用一些模板
   > - [watching-you](https://jj811208.github.io/watching-you/),有意思的东西
   > - 可以考虑使用 [Flow](https://flow.org/) 是一个针对 JavaScript 代码的静态类型检测器。配合 react 使用
+  > - 可以考虑使用 [3d效果](https://atroposjs.com/) 实现一些有趣的设定
 
 - [ ] 网站的menu初定
 
@@ -38,3 +39,11 @@ Personal blog, content document, resume, learning record. It is mainly implement
   > - [ ] 支持评论
   > - [ ] 高度自定义的、美观、可视的设计
   > - [ ] 支持搜索
+
+## 初步实践尝试
+
+- [ ] 选定对应的ui组件库和一些有趣的库
+
+  > - 拟采用 [nextUI](https://nextui.org/docs/guide/installation)作为UI组件库
+
+- [ ] 进一步制定出笔记和demo中的目录初版

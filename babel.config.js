@@ -1,6 +1,8 @@
 module.exports = {
   presets: [
     require.resolve('@docusaurus/core/lib/babel/preset'),
-    '@babel/preset-flow',
+    require.resolve('@babel/preset-flow'),
   ],
-}
+  plugins: ['babel-plugin-syntax-hermes-parser'],
+  parserOpts: {flow: 'all'},
+};
