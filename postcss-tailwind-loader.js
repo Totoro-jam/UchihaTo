@@ -4,7 +4,6 @@ module.exports = function (context, options) {
       configurePostCss(postcssOptions) {
           postcssOptions.plugins.push(
               require('tailwindcss'),
-              require('postcss-nested'),
               require('autoprefixer'),
           )
           return postcssOptions
