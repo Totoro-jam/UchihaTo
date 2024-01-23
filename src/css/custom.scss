@@ -3,10 +3,10 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
-//  @import "tailwindcss/base";
-//  @import "tailwindcss/components";
-//  @import "tailwindcss/utilities";
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+@import '~tailwindcss/screens';
 
 @font-face {
   font-family: 'custom zh';
@@ -20,6 +20,11 @@
   unicode-range: U+0000-007F;
 }
 
+/* tailwindcss 与 docusaurus 样式冲突 */
+svg {
+  display: inline-block;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #1d465e;
@@ -31,7 +36,7 @@
   --ifm-color-primary-lightest: #265b7a;
   --ifm-background-color: #ffffff;
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: 'custom en', 'custom zh', sans-serif #{!important};
+  --ifm-font-family-base: 'custom en', 'custom zh', sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -45,15 +50,15 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-
   .github-box .github-logo {
     background: url(../../static/img/github_dark.png) no-repeat;
   }
 }
 
-// 定制navbar item 样式
+/* 定制navbar item 样式 */
 .navbar__items {
   gap: 10px;
+
   a.navbar__item {
     position: relative;
   }

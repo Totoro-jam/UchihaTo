@@ -41,7 +41,6 @@ const config = {
     },
   },
 
-  // 插件 sass/scss
   plugins: [
     'docusaurus-plugin-sass',
     [
@@ -56,16 +55,7 @@ const config = {
       },
     ],
     // 解析tailwind.css, 为使用nextUI做准备
-    async function myPlugin(context, options) {
-      return {
-        name: 'docusaurus-tailwindcss',
-        configurePostCss(postcssOptions) {
-          postcssOptions.plugins.push(require('tailwindcss'))
-          postcssOptions.plugins.push(require('autoprefixer'))
-          return postcssOptions
-        },
-      }
-    },
+    './postcss-tailwind-loader.js'
   ],
 
   presets: [
