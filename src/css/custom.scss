@@ -20,11 +20,6 @@
   unicode-range: U+0000-007F;
 }
 
-/* tailwindcss 与 docusaurus 样式冲突 */
-svg {
-  display: inline-block;
-}
-
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #1d465e;
@@ -38,6 +33,11 @@ svg {
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'custom en', 'custom zh', sans-serif;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* tailwindcss 与 docusaurus 样式冲突 */
+  svg {
+    display: inline-block;
+  }
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
