@@ -50,6 +50,32 @@ export default function Home() {
             </CheckboxGroup>
           </Card>
         </div>
+        <div className={clsx('container mx-auto lg:w-9/10')}>
+          <Card className='px-12 py-6 my-10'>
+            <CheckboxGroup label="简历页面" defaultValue={['']}>
+              <Checkbox value="1">基本信息</Checkbox>
+              <dl>
+                <dt>描述: 包含基本信息，相关联系方式</dt>
+              </dl>
+              <Checkbox value="2">技能简介</Checkbox>
+              <dl>
+                <dt>描述: 动画式各种技能的icon或者其他可视化的展现形式</dt>
+              </dl>
+              <Checkbox value="3">工作经历</Checkbox>
+              <dl>
+                <dt>描述: 封装成对应组件，有一定可视化展现工作经历</dt>
+              </dl>
+              <Checkbox value="4">项目经历</Checkbox>
+              <dl>
+                <dt>描述: 主要展示项目经历，可以对应跳转到对应demo live地址</dt>
+              </dl>
+              <Checkbox value="5">自我评价</Checkbox>
+              <dl>
+                <dt>描述: 暂定</dt>
+              </dl>
+            </CheckboxGroup>
+          </Card>
+        </div>
         <main>
           <HomepageFeatures />
         </main>

@@ -10,40 +10,67 @@ import {
   Image,
   CheckboxGroup,
   Checkbox,
-  Card
+  Card,
+  Avatar
 } from '@nextui-org/react'
 import TypeIt from 'typeit-react'
+
+function CustomH2({ children }) {
+  return (
+    <h2 className="my-6 text-center text-4xl italic font-semibold underline underline-offset-8 decoration-sky-500">
+      {children}
+    </h2>
+  )
+}
+
+function AvatarCustom() {
+  return (
+    <Avatar
+      className='mx-auto rounded-full w-60 h-60'
+      alt="my avatar"
+      src={useBaseUrl('/img/uchihato2.png')}
+    />
+  )
+}
+
+function BasicInfo() {
+  return (
+    <div class="lg:grid grid-rows-3 grid-flow-col gap-4">
+      <div class="w-50 row-span-3">
+        <AvatarCustom />
+      </div>
+      <div class="col-span-2">02</div>
+      <div class="row-span-2 col-span-2">03</div>
+    </div>
+  )
+}
 
 export default function Resume() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout>
       <NextUIProvider>
-        <div className={clsx('container mx-auto lg:w-3/4')}>
-          <Card className='px-12 py-6 my-10'>
-            <CheckboxGroup label="本页面待做事项" defaultValue={['']}>
-              <Checkbox value="1">基本信息</Checkbox>
-              <dl>
-                <dt>描述: 包含基本信息，相关联系方式</dt>
-              </dl>
-              <Checkbox value="2">技能简介</Checkbox>
-              <dl>
-                <dt>描述: 动画式各种技能的icon或者其他可视化的展现形式</dt>
-              </dl>
-              <Checkbox value="3">工作经历</Checkbox>
-              <dl>
-                <dt>描述: 封装成对应组件，有一定可视化展现工作经历</dt>
-              </dl>
-              <Checkbox value="4">项目经历</Checkbox>
-              <dl>
-                <dt>描述: 主要展示项目经历，可以对应跳转到对应demo live地址</dt>
-              </dl>
-              <Checkbox value="5">自我评价</Checkbox>
-              <dl>
-                <dt>描述: 暂定</dt>
-              </dl>
-            </CheckboxGroup>
-          </Card>
+        <div className="container mx-auto">
+          <div className="basic-info">
+            <CustomH2>基本信息</CustomH2>
+            <BasicInfo t1="lk" test="lksdjl">hello world</BasicInfo>
+          </div>
+
+          <div className="basic-info">
+            <CustomH2>技能介绍</CustomH2>
+          </div>
+
+          <div className="basic-info">
+            <CustomH2>工作经历</CustomH2>
+          </div>
+
+          <div className="basic-info">
+            <CustomH2>项目经历</CustomH2>
+          </div>
+
+          <div className="basic-info">
+            <CustomH2>自我评价</CustomH2>
+          </div>
         </div>
       </NextUIProvider>
     </Layout>

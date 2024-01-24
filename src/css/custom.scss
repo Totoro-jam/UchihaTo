@@ -8,17 +8,17 @@
 @import '~tailwindcss/utilities';
 @import '~tailwindcss/screens';
 
-@font-face {
-  font-family: 'custom zh';
-  src: url('../../static/font/DouyinSansBold.otf');
-  unicode-range: U+4E00-9FFF;
-}
+// @font-face {
+//   font-family: 'custom zh';
+//   src: url('../../static/font/DouyinSansBold.otf');
+//   unicode-range: U+4E00-9FFF;
+// }
 
-@font-face {
-  font-family: 'custom en';
-  src: url('../../static/font/Atkinson-Hyperlegible-Regular-102.ttf');
-  unicode-range: U+0000-007F;
-}
+// @font-face {
+//   font-family: 'custom en';
+//   src: url('../../static/font/Atkinson-Hyperlegible-Regular-102.ttf');
+//   unicode-range: U+0000-007F;
+// }
 
 /* You can override the default Infima variables here. */
 :root {
