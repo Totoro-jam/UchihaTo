@@ -5,7 +5,7 @@ const { nextui } = require('@nextui-org/react')
 module.exports = {
   content: [
     // ...
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './src/**/*.{js,ts,jsx,tsx}',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
@@ -24,19 +24,28 @@ module.exports = {
   },
   darkMode: ['class', '[data-theme="dark"]'], // 这里没办法做到
   // plugins: [nextui()],
-  plugins: [nextui({
-    themes: {
-      light: {
-        colors: {
-          resumebg: '#fafafa',
-          whitefa: '#fafafa'
-        }
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            resumebg: '#fafafa',
+            whitefa: '#fafafa',
+            vertical: '#fff',
+            'fun-pink': '#00c7ff',
+            'fun-pink-darker': '#000f2e',
+            'fun-pink-darkest': '#000c24',
+            'fun-pink-dark': '#192742',
+            'fun-pink-light': '#009ac5',
+          },
+        },
+        dark: {
+          colors: {
+            resumebg: '#000',
+            vertical: '#000',
+          },
+        },
       },
-      dark: {
-        colors: {
-          resumebg: '#000'
-        }
-      }
-    }
-  })],
+    }),
+  ],
 }

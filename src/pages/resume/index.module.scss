@@ -1,0 +1,156 @@
+.landingSectionTitle:before {
+  content: '';
+  position: absolute;
+  left: 105%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100vw;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 199 255 / var(--tw-bg-opacity));
+}
+
+@media (max-width: 768px) {
+  .landingSectionTitle:before {
+    left: 50%;
+    right: auto;
+    top: -20px;
+    transform: translate(-50%, -50%);
+    height: 8px;
+    width: 150px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 199 255 / var(--tw-bg-opacity));
+  }
+}
+
+@keyframes scaleDownIn {
+  from {
+    opacity: 0;
+    transform: scale(4) translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.heroElem {
+  animation: scaleDownIn 1.5s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.heroElem .hreoSq:not(.squiggle-hero-pop1) {
+  animation: float 2s infinite ease-in-out;
+}
+
+.hreoSq {
+  @apply scale-[0.8] lg:scale-100;
+}
+
+.sqD {
+  position: absolute;
+  z-index: -10;
+}
+
+.blockContainer {
+  position: relative;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+  perspective: 500px;
+}
+
+.blockContainer .btnBackAlt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: inherit;
+  height: inherit;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: translateX(-28px) translateY(25px) rotateZ(15deg);
+  -moz-transform: translateX(-28px) translateY(25px) rotateZ(15deg);
+  -ms-transform: translateX(-28px) translateY(25px) rotate(15deg);
+  transform: translate(-28px) translateY(25px) rotate(15deg);
+  will-change: transform;
+  -webkit-box-shadow: 15px -15px 40px -10px #cbd5e1;
+  box-shadow: 15px -15px 40px -10px #cbd5e1;
+}
+
+.blockContainer .btnBackBlueViolet {
+  background: -webkit-linear-gradient(315deg, #3ae1ff 0%, #dd2af0 120%);
+  background: -moz-linear-gradient(315deg, #3ae1ff 0%, #dd2af0 120%);
+  background: linear-gradient(135deg, #3ae1ff 0%, #dd2af0 120%);
+}
+
+.blockContainer .btnBackDarkBlue {
+  background: -webkit-linear-gradient(315deg, #142e62 -20%, #ccf6f9 120%);
+  background: -moz-linear-gradient(315deg, #142e62 -20%, #ccf6f9 120%);
+  background: linear-gradient(135deg, #142e62 -20%, #ccf6f9 120%);
+}
+
+.blockContainer .btnFront {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.blockContainer:hover > .btnBackAlt {
+  -webkit-transform: translateZ(15px) rotateZ(10deg) rotateX(-20deg)
+    rotateY(-20deg);
+  -moz-transform: translateZ(15px) rotateZ(10deg) rotateX(-20deg)
+    rotateY(-20deg);
+  transform: translateZ(15px) rotate(10deg) rotateX(-20deg) rotateY(-20deg);
+}
+
+.blockContainer:hover > .btnFront {
+  -webkit-transform: translateZ(80px) translateY(-5px) rotateX(15deg)
+    rotateY(15deg);
+  -moz-transform: translateZ(80px) translateY(-5px) rotateX(15deg)
+    rotateY(15deg);
+  transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
+}

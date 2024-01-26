@@ -1,8 +1,8 @@
-import React from 'react';
-import clsx from 'clsx';
-import Translate from '@docusaurus/Translate';
-import Heading from '@theme/Heading';
-export default function NotFoundContent({className}) {
+import React from 'react'
+import clsx from 'clsx'
+import Translate from '@docusaurus/Translate'
+import Heading from '@theme/Heading'
+export default function NotFoundContent({ className }) {
   return (
     <main className={clsx('container margin-vert--xl', className)}>
       <div className="row">
@@ -32,5 +32,5 @@ export default function NotFoundContent({className}) {
         </div>
       </div>
     </main>
-  );
+  )
 }

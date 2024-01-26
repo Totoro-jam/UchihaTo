@@ -55,7 +55,7 @@ const config = {
       },
     ],
     // 解析tailwind.css, 为使用nextUI做准备
-    './postcss-tailwind-loader.js'
+    './postcss-tailwind-loader.js',
   ],
 
   presets: [
