@@ -2,6 +2,24 @@
 
 Personal blog, content document, resume, learning record. It is mainly implemented through react and docusaurus
 
+## 任务开始细节
+
+- [ ] 首页布局和样式
+
+  > - [ ] 首页展示的内容
+  > - [ ] 动画
+  > - [ ] 相关布局
+  > - [ ] 素材全部到位
+
+- [ ] 简历页面
+
+  > - [ ] 调查问卷
+  > - [ ] 问卷展示
+  > - [ ] 权限控制
+  > - [ ] 简历内容展示
+  > - [ ] 时间线组件展示对应工作经历
+  > - [ ] 项目列表总结
+
 ## to do lists
 
 - [ ] 技术调研和选型
