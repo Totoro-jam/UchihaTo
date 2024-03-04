@@ -5,8 +5,8 @@ import { SunIcon } from './SunIcon'
 import { useColorMode } from '@docusaurus/theme-common'
 
 export default function SwitchTheme() {
-  const {colorMode, setColorMode } = useColorMode()
-  
+  const { colorMode, setColorMode } = useColorMode()
+
   function change(event) {
     console.log(23, '点击了', event.target.checked)
     event.target.checked ? setColorMode('light') : setColorMode('dark')
@@ -19,7 +19,6 @@ export default function SwitchTheme() {
       size="lg"
       color="secondary"
       startContent={<SunIcon />}
-      endContent={<MoonIcon />}>
-    </Switch>
+      endContent={<MoonIcon />}></Switch>
   )
 }

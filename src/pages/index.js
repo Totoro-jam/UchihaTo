@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 // import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import SwitchTheme from '@site/src/components/SwitchTheme'
+// import PhotoAlbum from '@site/src/components/PhotoAlbum'
 // import Intro from '@site/src/components/Intro'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import {
@@ -86,6 +87,10 @@ function CardContent() {
             <dl>
               <dt>描述: 暂定</dt>
             </dl>
+            <Checkbox value="5">匹配度问卷调查</Checkbox>
+            <dl>
+              <dt>描述: 让有意向的人员通过匹配度问卷调查,来计算对应符合度</dt>
+            </dl>
           </CheckboxGroup>
         </Card>
       </div>
@@ -147,9 +152,10 @@ function RightContent({ className = '' }) {
       </div>
       <img
         className={clsx(
-          'absolute object-center  w-[240px] h-[200px] object-cover top-[50%] right-0',
+          'absolute object-center  w-[240px] h-[200px] object-cover top-[50%] -right-10',
           styles.sqD,
         )}
+        style={{ animationDelay: '0.1s' }}
         src={useBaseUrl('/img/index/ipod.svg')}
         alt=""
       />
@@ -157,6 +163,7 @@ function RightContent({ className = '' }) {
         className={clsx(
           'absolute object-center w-[660px] h-[260px] object-cover inset-0 m-auto -z-[6]',
         )}
+        style={{ animationDelay: '' }}
         src={useBaseUrl(`/img/index/${isMac ? 'mac' : 'windows'}.svg`)}
         alt=""
       />
@@ -165,6 +172,7 @@ function RightContent({ className = '' }) {
           'absolute object-center w-[240px] h-[120px] object-cover top-[75%] right-[20%] z-10',
           styles.sqD,
         )}
+        style={{ animationDelay: '0.2s' }}
         src={useBaseUrl('/img/index/notes.svg')}
         alt=""
       />
@@ -173,6 +181,7 @@ function RightContent({ className = '' }) {
           'absolute object-center w-[100px] h-[220px] object-cover top-[50%] left-[5%] z-10',
           styles.sqD,
         )}
+        style={{ animationDelay: '0.3s' }}
         src={useBaseUrl('/img/index/just-do-it.svg')}
         alt=""
       />
@@ -181,6 +190,7 @@ function RightContent({ className = '' }) {
           'absolute object-center w-[240px] h-[100px] object-cover top-[75%] left-[15%] z-10',
           styles.sqD,
         )}
+        style={{ animationDelay: '0.4s' }}
         src={useBaseUrl('/img/index/camera.svg')}
         alt=""
       />
@@ -197,11 +207,11 @@ export default function Home() {
       {/* <HomepageHeader /> */}
       <NextUIProvider>
         <div className="container mx-auto">
-          <div className="lg:h-[680px] grid sm:grid-cols-1 lg:grid-cols-2 sm:grid-rows-2 lg:grid-rows-1 auto-cols-max">
-            <div className="col-span1 sm:row-span-1 bg-[url('/static/img/index/office-bg.svg')] bg-no-repeat bg-origin-border bg-center bg-container bg-[length:100%_100%]">
+          <div className="lg:h-[680px] grid sm:grid-cols-1 lg:grid-cols-2 sm:grid-rows-1 lg:grid-rows-1 auto-cols-max">
+            <div className="col-span-1 sm:row-span-1 object-cover bg-[url('/static/img/index/office-bg.svg')] bg-no-repeat bg-origin-border bg-center bg-container bg-[length:100%_100%]">
               <LeftContent />
             </div>
-            <div className="col-span1 sm:row-span-1">
+            <div className="hidden lg:block lg:col-span-1">
               <RightContent />
             </div>
           </div>

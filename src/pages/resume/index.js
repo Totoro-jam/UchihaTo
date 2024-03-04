@@ -2,14 +2,11 @@ import clsx from 'clsx'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { useColorMode } from '@docusaurus/theme-common'
 import { Link } from 'react-router-dom'
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from 'react-vertical-timeline-component'
-import 'react-vertical-timeline-component/style.min.css'
+import { Chrono } from 'react-chrono'
 import Layout from '@theme/Layout'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './index.module.scss'
+import SurveyForm from '@site/src/components/SurveyForm'
 import Translate, { translate } from '@docusaurus/Translate'
 import {
   NextUIProvider,
@@ -221,39 +218,6 @@ const projects = [
   },
 ]
 
-const experiences = [
-  {
-    title: 'Frontend Developer',
-    company_name: 'Doctor At Work',
-    icon: '/img/freelance.png',
-    // iconBg: '#93A4B8',
-    borderBottom: '#00c6ff',
-    iconBg: 'linear-gradient(135deg, #00c6ff 20%, #0072ff 140%)',
-    date: 'September 2020 - Present',
-    points: [
-      "Developed and maintained over 140 commercial websites, banners and emails with responsive design and cross-browser compatibility, as well as other visual materials as a part of clients' advertising campaigns",
-      'Created dozens of mini-games, chat bots, quizzes and interactive educational sites with complex animated and interactive elements and detailings using JavaScript, TypeScript and frontend frameworks like React, Astro, Qwik, ThreeJS, etc.',
-      "Adapted the code of third-party client projects made in React framework, revised for publication on own or the company's platforms.",
-      'Collaborated with cross-functional teams including designers, project managers, and other developers to create high-quality products.',
-      'Formed and structured development standards to automate routine tasks, carried out systematic code reviews, created needed templates, developed and implemented various plugins, etc.',
-    ],
-  },
-  {
-    title: 'Frontend Developer',
-    company_name: 'Freelance | Self-employed',
-    icon: '/img/freelance.png',
-    // iconBg: '#93A4B8',
-    borderBottom: '#00c6ff',
-    // iconBg: 'linear-gradient(135deg, #00c6ff 20%, #0072ff 140%)',
-    iconBg: '#b7e8fc',
-    date: 'January 2019 - September 2020',
-    points: [
-      'Developed and maintained over 20 websites using JavaScript, HTML5, CSS3, SASS/SCSS and other related technologies',
-      'Implemented responsive adaptive design and ensured cross-browser compatibility.',
-    ],
-  },
-]
-
 const skills = [
   {
     title: 'HTML',
@@ -375,56 +339,43 @@ function BasicInfo() {
 }
 
 function WorkVertical() {
-  const { colorMode } = useColorMode()
-  console.log(2323, colorMode)
-  const verticalBg = colorMode === 'dark' ? 'black' : '#fafafa'
-  return (
-    <VerticalTimeline className="!w-full">
-      {experiences.map((experience, index) => (
-        <VerticalTimelineElement
-          className={clsx('dark:text-white')}
-          key={experience.company_name}
-          date={experience.date}
-          iconStyle={{ background: experience.iconBg }}
-          icon={
-            <div className="flex justify-center items-center w-full h-full">
-              <img
-                src={experience.icon}
-                alt={experience.company_name}
-                className="w-[60%] h-[60%] object-contain"
-              />
-            </div>
-          }
-          contentStyle={{
-            background: verticalBg,
-            borderBottom: '6px',
-            borderStyle: 'solid',
-            borderBottomColor: experience.borderBottom,
-            boxShadow: '0px 12px 20px -8px #E2E8F0',
-          }}>
-          <div>
-            <h3 className="dark:text-white text-black text-xl font-poppins font-semibold">
-              {experience.title}
-            </h3>
-            <p
-              className="text-black-500 font-medium !text-lg"
-              style={{ margin: 0 }}>
-              {experience.company_name}
-            </p>
-          </div>
+  const items = [
+    {
+      title: 'May 1940',
+      cardTitle: 'Dunkirk',
+      url: 'http://www.history.com',
+      cardSubtitle:
+        'Men of the British Expeditionary Force (BEF) wade out to..',
+      cardDetailedText:
+        'Men of the British Expeditionary Force (BEF) wade out to..',
+      media: {
+        type: 'IMAGE',
+        source: {
+          url: 'http://someurl/image.jpg',
+        },
+      },
+    },
+    {
+      title: 'May 1940',
+      cardTitle: 'Dunkirk',
+      url: 'http://www.history.com',
+      cardSubtitle:
+        'Men of the British Expeditionary Force (BEF) wade out to..',
+      cardDetailedText:
+        'Men of the British Expeditionary Force (BEF) wade out to..',
+      media: {
+        type: 'IMAGE',
+        source: {
+          url: 'http://someurl/image.jpg',
+        },
+      },
+    },
+  ]
 
-          <ul className="my-5 mb-1 list-disc ml-5 space-y-2">
-            {experience.points.map((point, index) => (
-              <li
-                key={`experience-point-${index}`}
-                className="text-black-500/50 font-normal pl-1 text-lg leading-tight">
-                {point}
-              </li>
-            ))}
-          </ul>
-        </VerticalTimelineElement>
-      ))}
-    </VerticalTimeline>
+  return (
+    <div className="w-full">
+      <Chrono items={items} mode="VERTICAL_ALTERNATING" />
+    </div>
   )
 }
 
@@ -539,6 +490,7 @@ export default function Resume() {
             </section>
           </div>
         </div>
+        <SurveyForm />
       </NextUIProvider>
     </Layout>
   )

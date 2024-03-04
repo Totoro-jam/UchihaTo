@@ -22,7 +22,6 @@
   justify-content: center;
 }
 
-
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -35,7 +34,6 @@
   }
 }
 
-
-.sqD{
+.sqD {
   animation: float 2s infinite ease-in-out;
 }

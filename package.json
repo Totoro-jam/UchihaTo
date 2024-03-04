@@ -29,9 +29,11 @@
     "framer-motion": "^10.18.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
+    "react-chrono": "^2.4.2",
     "react-dom": "^18.0.0",
     "react-scroll": "^1.9.0",
     "sass": "^1.70.0",
+    "survey-react-ui": "^1.9.132",
     "typeit-react": "^2.7.1"
   },
   "devDependencies": {
@@ -48,7 +50,6 @@
     "hermes-eslint": "^0.18.2",
     "postcss": "^8.4.33",
     "prettier": "3.2.2",
-    "react-vertical-timeline-component": "^3.6.0",
     "tailwindcss": "^3.4.1"
   },
   "browserslist": {

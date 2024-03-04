@@ -39,6 +39,8 @@ Personal blog, content document, resume, learning record. It is mainly implement
   > - [watching-you](https://jj811208.github.io/watching-you/),有意思的东西
   > - 可以考虑使用 [Flow](https://flow.org/) 是一个针对 JavaScript 代码的静态类型检测器。配合 react 使用
   > - 可以考虑使用 [3d效果](https://atroposjs.com/) 实现一些有趣的设定
+  > - 可以考虑使用 [react-chrono](https://github.com/prabhuignoto/react-chrono) 实现对应时间线的内容展示
+  > - 可以考虑使用 [survey.js](https://surveyjs.io/form-library/documentation) 实现反向问卷调查和数据统计，方便计算对应岗位符合度
 
 - [ ] 网站的menu初定
 
