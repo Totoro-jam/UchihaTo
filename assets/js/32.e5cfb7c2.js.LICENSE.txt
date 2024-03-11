@@ -1091,6 +1091,10 @@
 
 /*! exports provided: default */
 
+/*! exports provided: default, PlainDark */
+
+/*! exports provided: default, PlainLight */
+
 /*! exports provided: defaultActionBarCss, ActionContainer */
 
 /*! exports provided: defaultListCss, ListModel */
@@ -1521,6 +1525,10 @@
   !*** ./src/template-renderer.ts ***!
   \**********************************/
 
+/*!**********************************!*\
+  !*** ./src/themes/plain-dark.ts ***!
+  \**********************************/
+
 /*!***********************************!*\
   !*** ./src/images/ArrowRight.svg ***!
   \***********************************/
@@ -1555,6 +1563,10 @@
 
 /*!***********************************!*\
   !*** ./src/react/tagbox-item.tsx ***!
+  \***********************************/
+
+/*!***********************************!*\
+  !*** ./src/themes/plain-light.ts ***!
   \***********************************/
 
 /*!************************************!*\
