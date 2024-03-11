@@ -1,6 +1,6 @@
 import 'survey-core/defaultV2.min.css'
-import { PlainDark } from "survey-core/themes/Plain-dark";
-import { PlaintLight } from "survey-core/themes/Plain-light";
+import { PlainDark } from "survey-core/themes/plain-dark";
+import { PlaintLight } from "survey-core/themes/plain-light";
 import { Model } from 'survey-core'
 import { useCallback, useState } from 'react'
 import { Survey } from 'survey-react-ui'
