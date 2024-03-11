@@ -3,6 +3,7 @@ import { Model } from 'survey-core'
 import { useCallback, useState } from 'react'
 import { Survey } from 'survey-react-ui'
 import { Modal, ModalContent, ModalHeader } from '@nextui-org/react'
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const surveyJson = {
   elements: [
@@ -43,7 +44,9 @@ function App() {
             <ModalHeader className="flex flex-col gap-1 text-center">
               匹配度调查
             </ModalHeader>
-            <Survey model={survey} />
+            <BrowserOnly>
+              {() => <Survey model={survey} />}
+            </BrowserOnly>
           </>
         )}
       </ModalContent>

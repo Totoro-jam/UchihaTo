@@ -3,6 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { useColorMode } from '@docusaurus/theme-common'
 import { Link } from 'react-router-dom'
 import { Chrono } from 'react-chrono'
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import Layout from '@theme/Layout'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './index.module.scss'
@@ -374,7 +375,9 @@ function WorkVertical() {
 
   return (
     <div className="w-full">
-      <Chrono items={items} mode="VERTICAL_ALTERNATING" />
+      <BrowserOnly>
+      {() => <Chrono items={items} mode="VERTICAL_ALTERNATING" />}
+      </BrowserOnly>
     </div>
   )
 }
