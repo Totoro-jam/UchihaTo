@@ -1,9 +1,12 @@
 import 'survey-core/defaultV2.min.css'
+import { PlainDark } from "survey-core/themes/Plain-dark";
+import { PlaintLight } from "survey-core/themes/Plain-light";
 import { Model } from 'survey-core'
 import { useCallback, useState } from 'react'
 import { Survey } from 'survey-react-ui'
 import { Modal, ModalContent, ModalHeader } from '@nextui-org/react'
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import { useColorMode } from '@docusaurus/theme-common'
 
 const surveyJson = {
   elements: [
@@ -23,6 +26,10 @@ const surveyJson = {
 function App() {
   const [isOpen, setIsOpen] = useState(true)
   const survey = new Model(surveyJson)
+  const { colorMode } = useColorMode()
+  const applayTheme = colorMode === 'dark' ? PlainDark : PlaintLight
+  console.log(2323, colorMode, applayTheme)
+  survey.applyTheme({...applayTheme, "isPanelless": true})
   const alertResults = useCallback((sender) => {
     const results = JSON.stringify(sender.data)
     alert(results)
